@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="logo">
+        <img src="website-logo.png" alt="website-logo">
+    </div>
+
+    <div id="first-page">
+        <div id="title-bar"></div>
+        <div id="main-container">
+            <h1 id="game-title">CONNECT FOUR</h1>
+            <button id="how-to-play-btn">How to Play</button>  
+        </div>
+    </div>
+
+    <div id="how-to-play-page" style="display: none;">
+        <div id="main-container">
+            <div id="instructions">
+                <p>- Be the first player to get four of your colored checkers in a row- horizontally, vertically or diagonally.</p>
+                <p>- Decide who Plays first. Players will alternate turns after playing a checker.</p>
+                <p>- On Your turn, drop one of your checkers down Any of the slots in the top of the grid.</p>
+                <p>- Play alternates until one player gets Four checkers of his or her color in a row. The four in a row can be horizontally, Vertically, or diagonally.</p>
+                <p>- Press ESC to pause the game.</p>
+                <p>Good Luck!</p>
+            </div>
+            <button id="start-game-btn">Start Game</button>
+        </div>
+    </div>
+
+    <div id="game-page" style="display: none;">
+        <div id="main-container">
+            <div id="player">
+                <h1 id="player-type">Player - 1</h1>
+            </div>
+            <div id="grid">
+                <div class="row">
+                    <div class="col"><button class="btn btn-1"></button></div>
+                    <div class="col"><button class="btn btn-2"></button></div>
+                    <div class="col"><button class="btn btn-3"></button></div>
+                    <div class="col"><button class="btn btn-4"></button></div>
+                    <div class="col"><button class="btn btn-5"></button></div>
+                    <div class="col"><button class="btn btn-6"></button></div>
+                </div>
+                <div class="row">
+                    <div class="col"><button class="btn btn-7"></button></div>
+                    <div class="col"><button class="btn btn-8"></button></div>
+                    <div class="col"><button class="btn btn-9"></button></div>
+                    <div class="col"><button class="btn btn-10"></button></div>
+                    <div class="col"><button class="btn btn-11"></button></div>
+                    <div class="col"><button class="btn btn-12"></button></div>
+                </div>
+                <div class="row">
+                    <div class="col"><button class="btn btn-12"></button></div>
+                    <div class="col"><button class="btn btn-14"></button></div>
+                    <div class="col"><button class="btn btn-15"></button></div>
+                    <div class="col"><button class="btn btn-16"></button></div>
+                    <div class="col"><button class="btn btn-17"></button></div>
+                    <div class="col"><button class="btn btn-18"></button></div>
+                </div>
+                <div class="row">
+                    <div class="col"><button class="btn btn-19"></button></div>
+                    <div class="col"><button class="btn btn-20"></button></div>
+                    <div class="col"><button class="btn btn-21"></button></div>
+                    <div class="col"><button class="btn btn-22"></button></div>
+                    <div class="col"><button class="btn btn-23"></button></div>
+                    <div class="col"><button class="btn btn-24"></button></div>
+                </div>
+                <div class="row">
+                    <div class="col"><button class="btn btn-25"></button></div>
+                    <div class="col"><button class="btn btn-26"></button></div>
+                    <div class="col"><button class="btn btn-27"></button></div>
+                    <div class="col"><button class="btn btn-28"></button></div>
+                    <div class="col"><button class="btn btn-29"></button></div>
+                    <div class="col"><button class="btn btn-30"></button></div>
+                </div>
+                <div class="row">
+                    <div class="col"><button class="btn btn-31"></button></div>
+                    <div class="col"><button class="btn btn-32"></button></div>
+                    <div class="col"><button class="btn btn-33"></button></div>
+                    <div class="col"><button class="btn btn-34"></button></div>
+                    <div class="col"><button class="btn btn-35"></button></div>
+                    <div class="col"><button class="btn btn-36"></button></div>
+                </div>
+                <div class="row">
+                    <div class="col"><button class="btn btn-37"></button></div>
+                    <div class="col"><button class="btn btn-38"></button></div>
+                    <div class="col"><button class="btn btn-39"></button></div>
+                    <div class="col"><button class="btn btn-40"></button></div>
+                    <div class="col"><button class="btn btn-41"></button></div>
+                    <div class="col"><button class="btn btn-42"></button></div>
+                </div>
+            </div>
+
+            <button id="reset-game-btn">Reset Game</button>
+        </div>
+       
+    </div>
+
+    <div id="gameover-container" style="display: none;">
+        <h2 id="gameover-message"></h2>
+        
+       
+    </div>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
